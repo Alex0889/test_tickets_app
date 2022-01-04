@@ -1,0 +1,45 @@
+@import "src/prebuild/scss/variables";
+
+.root {
+  background-color: $color-white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 4px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-blue;
+  }
+
+  &__info {
+    margin-top: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+
+    &_top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $color-text_grey;
+    }
+
+    &_bottom {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 14px;
+      line-height: 21px;
+      color: $color-text;
+    }
+  }
+}

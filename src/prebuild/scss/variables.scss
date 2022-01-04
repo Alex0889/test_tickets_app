@@ -1,0 +1,24 @@
+$color-bg: #E5E5E5;
+$color-white: #FFFFFF;
+$color-text: #4A4A4A;
+$color-text_grey: #A0B0B9;
+$color-blue: #2196F3;
+$color-point: #F1FCFF;
+
+$breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px,
+);
+
+$container-widths: (
+  xs: calc(100% - 24px),
+  sm: calc(100% - 32px),
+  md: calc(100% - 48px),
+  lg: calc(100% - 64px),
+  xl: 1140px,
+  xxl: 1240px,
+);

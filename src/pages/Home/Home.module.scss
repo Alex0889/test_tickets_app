@@ -1,0 +1,14 @@
+@import "src/prebuild/scss/mixins";
+@import "src/prebuild/scss/variables";
+
+.root {
+  position: relative;
+  
+  display: grid;
+  grid-template-columns: 230px 500px;
+  gap: 20px;
+
+  max-width: 750px;
+
+  margin: 0 auto;
+}

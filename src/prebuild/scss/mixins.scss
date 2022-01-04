@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin breakpoint($breakpoint-name) {
+  $min-width: map-get($breakpoints, $breakpoint-name);
+  @if ($min-width != null) {
+    @media screen and (min-width: $min-width) {
+      @content
+    }
+  } @else {
+    @debug "Breakpoint is not described!"
+  }
+}
+
+@mixin font($font-size, $font-weight, $line-height, $letter-spacing: normal) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
